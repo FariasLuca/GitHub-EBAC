@@ -1,2 +1,2 @@
 # GitHub-EBAC
- Projetos de estudo (Back-End, "JAVA")
+ Projetos de estudo para o curso (Back-End, "JAVA")
