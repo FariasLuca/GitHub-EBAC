@@ -1,6 +1,7 @@
 public class PrimeiraClasse{
 
     public static void main(String[] args){
-        System.out.println("Ola, LUCAS");
+        System.out.print("Ola, Lucas");
+
     }
 }
