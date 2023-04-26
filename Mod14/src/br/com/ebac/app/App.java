@@ -11,9 +11,7 @@ public class App {
     public static IClienteDAO Icliente;
     public static void main(String args[]){
         Icliente = new ClienteMapDAO();
-
-        //Lucas,712,924,Lameira
-
+        
         String Opsao = JOptionPane.showInputDialog(null,"DIGITE: (1).Cadastro  (2).Consulta  (3).Exclusão  (4).Alteração  (5).Mostrar Lista  (6).Sair","Bem Vindo",JOptionPane.INFORMATION_MESSAGE);
 
         while (!isValido(Opsao)){
