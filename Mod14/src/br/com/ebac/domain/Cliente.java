@@ -95,6 +95,6 @@ public class Cliente {
     @Override
     public String toString() {
         return "\n (Cliente) <> " +
-                "Nome:" + Nome + " /  CPF:" + CPF +" / Celular: "+Celular+ " / Endereço: "+End;
+                " Nome:" + Nome + " /  CPF:" + CPF +" / Celular: "+Celular+ " / Endereço: "+End;
     }
 }

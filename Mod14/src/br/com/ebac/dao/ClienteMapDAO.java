@@ -36,6 +36,7 @@ public class ClienteMapDAO implements IClienteDAO{
             return true;
 
         }else{
+            JOptionPane.showMessageDialog(null,"Não foi possivel excluir o cliente \n confira o CPF e tente novamente","Erro de Operação",JOptionPane.INFORMATION_MESSAGE);
             return false;
         }
     }
@@ -72,7 +73,7 @@ public class ClienteMapDAO implements IClienteDAO{
 
         }else{
 
-            JOptionPane.showMessageDialog(null,"Não foi possivel encontrar p cliente \n confira o CPF e tente novamente","Erro de Consulta",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Não foi possivel encontrar o cliente \n confira o CPF e tente novamente","Erro de Consulta",JOptionPane.INFORMATION_MESSAGE);
             return null;
 
         }
