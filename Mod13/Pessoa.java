@@ -26,7 +26,7 @@ public abstract class Pessoa{
     }
 
     public void setCPF(long cPF) {
-        CPF = cPF;
+        this.CPF = cPF;
     }
 
     public int getIdade() {
@@ -42,7 +42,7 @@ public abstract class Pessoa{
     }
 
     public void setImpostos(boolean impostos) {
-        Impostos = impostos;
+        this.Impostos = impostos;
     }
 
     
