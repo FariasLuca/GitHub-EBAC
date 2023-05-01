@@ -80,6 +80,8 @@ public class App {
         Ipessoa.consultarF();
     }
     public static void verTodos(){
+
+        
         Ipessoa.verTodos();
     }
 

@@ -33,7 +33,7 @@ public class PessoaDAO implements IPessoaDAO{
             }
 
         }else  if("f".equals(sexo) || "F".equals(sexo)){
-            pessoa.setSexo("F");
+            pessoa.setSexo(" F");
 
             if(this.Feminino.contains(pessoa)){
                 JOptionPane.showMessageDialog(null,"Erro de Operação \n O Nome de usuario já se encontra cadastrado","Cadastro de Usuario",JOptionPane.INFORMATION_MESSAGE);
@@ -85,7 +85,12 @@ public class PessoaDAO implements IPessoaDAO{
 
     @Override
     public void verTodos() {
-        JOptionPane.showMessageDialog(null, "Todos Usuarios:  "+this.Feminino +this.Masculino, "Lista de Usuários", JOptionPane.INFORMATION_MESSAGE);
+        ArrayList<Pessoa> verTodos = new ArrayList<>();
+        verTodos.addAll(Masculino);
+        verTodos.addAll(Feminino);
+
+        Collections.sort(verTodos);
+        JOptionPane.showMessageDialog(null, "Todos Usuarios:  "+verTodos, "Lista de Usuários", JOptionPane.INFORMATION_MESSAGE);
 
     }
 }

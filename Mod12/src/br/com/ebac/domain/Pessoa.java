@@ -2,7 +2,7 @@ package br.com.ebac.domain;
 
 import java.util.Objects;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa>{
     private String Nome;
     private String Sexo;
 
@@ -39,10 +39,17 @@ public class Pessoa {
         return Objects.hash(Nome);
     }
 
+
     @Override
     public String toString() {
-        return "\n("+Sexo+") <> " +
+        return "\n"+Sexo+"/ " +
                 " Nome:" + Nome;
 
+    }
+
+
+    @Override
+    public int compareTo(Pessoa newPessoa) {
+        return this.Nome.compareTo(newPessoa.getNome());
     }
 }
